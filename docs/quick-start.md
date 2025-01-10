@@ -9,21 +9,21 @@ npm install -g typescript
 tsc --init
 mkdir src
 npm install --save-dev @types/xrm
-npm install --save dataverse-ify
+npm install --save dataverse-ify@2
 ```
 
 Now you need to auth against Dataverse using:
 ```
-npx dataverse-auth [environment]
+npx dataverse-auth@2 [environment]
 ```
 E.g.
 ```
-npx dataverse-auth contosoorg.crm.dynamics.com
+npx dataverse-auth@2 contosoorg.crm.dynamics.com
 ```
 
 Now you can generate your types
 ```
-npx dataverse-gen init
+npx dataverse-gen@2 init
 ```
 
 Follow the instructions - you can select the entities/actions/functions to include in the config
